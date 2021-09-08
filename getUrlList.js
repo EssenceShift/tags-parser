@@ -23,8 +23,6 @@ function siteMapCheck(i) {
              xmlDate = xmlData[i].loc[0];
     }
     console.log(xmlDate)
-
-
     const xmlNews = await axios.get(xmlDate)
     let result
     await parseString(xmlNews.data, function (err, res) {
